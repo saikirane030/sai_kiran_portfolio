@@ -4,11 +4,17 @@ A production-ready personal portfolio for E Sai Kiran, designed as an AI enginee
 
 ## Technologies
 
-- HTML5 semantic markup
-- CSS3 with responsive layouts, motion, reduced-motion support, and custom properties
-- Vanilla JavaScript
-- Google Fonts (Manrope and DM Mono)
-- No frameworks or build step
+| Technology | Used for |
+| --- | --- |
+| HTML5 | Website structure and content |
+| CSS3 | 2026-style UI, animations, and responsive design |
+| JavaScript | Interactions, project modals, filters, and chatbot UI |
+| Python | Planned backend for the real GenAI assistant |
+| GenAI API | Planned assistant/model integration |
+| Git + GitHub | Version control and hosting |
+| GitHub Pages | Free frontend deployment |
+
+The current version intentionally uses HTML5, CSS3, and vanilla JavaScript only. React is not required. Python will be added when the secure GenAI backend is implemented.
 
 ## Features
 
@@ -19,7 +25,7 @@ A production-ready personal portfolio for E Sai Kiran, designed as an AI enginee
 - Interactive problem-solving flow
 - Local Ask SAI AI assistant with suggested questions, typing state, and clear chat
 - Smooth scrolling, focus states, reduced-motion support, SEO metadata, and Open Graph metadata
-- GitHub, LinkedIn, email, and resume download surfaces
+- GitHub, LinkedIn, and email contact surfaces
 
 ## Run Locally
 
@@ -42,8 +48,25 @@ To connect a real GenAI service later, replace the `answerFor` fallback inside `
 
 **Never expose API keys in frontend code or commit them to GitHub.** Store secrets in server-side environment variables and use a protected backend or serverless function.
 
+## Planned Architecture
+
+```text
+HTML5
+	↓
+CSS3
+	↓
+JavaScript
+	↓
+Python backend
+	↓
+GenAI model/API
+	↓
+AI response
+```
+
+The browser currently stops at JavaScript and uses local fallback responses. A future implementation will send a question from the browser to a Python backend, let the backend call the GenAI provider with a restricted portfolio context, and return the response to the chat UI. API keys will remain in backend environment variables.
+
 ## Personalization Checklist
 
-- Compile `resume.tex` to `assets/E-Sai-Kiran-Resume.pdf` with a LaTeX distribution before deploying.
 - The contact email is `saikirane030@gmail.com`.
 - Replace any project placeholder links with the relevant repository or live demo URLs.
