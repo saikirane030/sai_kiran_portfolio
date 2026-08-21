@@ -18,12 +18,13 @@ The current version intentionally uses HTML5, CSS3, and vanilla JavaScript only.
 
 ## Features
 
-- Premium dark AI-product visual system
+- Premium dark AI-student operating-system visual system
 - Responsive navigation with mobile menu
-- Project lab with accessible case-study modal
+- Project lab with honest experiment case studies and accessible modal
 - Technology matrix that highlights related projects
 - Interactive problem-solving flow
-- Local Ask SAI AI assistant with suggested questions, typing state, and clear chat
+- Learning Now section and Experience / Journey timeline
+- Local Ask SAI AI assistant with restricted portfolio knowledge, typing state, and clear chat
 - Smooth scrolling, focus states, reduced-motion support, SEO metadata, and Open Graph metadata
 - GitHub, LinkedIn, and email contact surfaces
 
@@ -69,4 +70,4 @@ The browser currently stops at JavaScript and uses local fallback responses. A f
 ## Personalization Checklist
 
 - The contact email is `saikirane030@gmail.com`.
-- Replace any project placeholder links with the relevant repository or live demo URLs.
+- Project cards show the portfolio repository link and label unavailable live demos as Coming Soon.
